@@ -11,11 +11,11 @@
 #ifndef CT_MODULAR_EXP_HPP
 #define CT_MODULAR_EXP_HPP
 
-#include <ctbignum/bigint.hpp>
-#include <ctbignum/bitshift.hpp>
-#include <ctbignum/division.hpp>
-#include <ctbignum/montgomery.hpp>
-#include <ctbignum/slicing.hpp>
+#include "bigint.hpp"
+#include "bitshift.hpp"
+#include "division.hpp"
+#include "montgomery.hpp"
+#include "slicing.hpp"
 
 #include <cstddef>
 #include <limits>

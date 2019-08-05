@@ -11,11 +11,11 @@
 #ifndef CT_STRINGINIT_HPP
 #define CT_STRINGINIT_HPP
 
-#include <ctbignum/addition.hpp>
-#include <ctbignum/bigint.hpp>
-#include <ctbignum/mult.hpp>
-#include <ctbignum/slicing.hpp>
-#include <ctbignum/utility.hpp>
+#include "addition.hpp"
+#include "bigint.hpp"
+#include "mult.hpp"
+#include "slicing.hpp"
+#include "utility.hpp"
 
 #include <cstddef>
 #include <limits>

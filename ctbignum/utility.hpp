@@ -11,7 +11,7 @@
 #ifndef CT_UTILITY_HPP
 #define CT_UTILITY_HPP
 
-#include <ctbignum/bigint.hpp>
+#include "bigint.hpp"
 
 #include <array>
 #include <cstddef>

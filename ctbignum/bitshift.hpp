@@ -11,8 +11,8 @@
 #ifndef CT_BITSHIFTS_HPP
 #define CT_BITSHIFTS_HPP
 
-#include <ctbignum/bigint.hpp>
-#include <ctbignum/slicing.hpp>
+#include "bigint.hpp"
+#include "slicing.hpp"
 
 #include <cstddef>
 #include <limits>

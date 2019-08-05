@@ -11,9 +11,9 @@
 #ifndef CT_RELATIONAL_HPP
 #define CT_RELATIONAL_HPP
 
-#include <ctbignum/addition.hpp>
-#include <ctbignum/bigint.hpp>
-#include <ctbignum/slicing.hpp>
+#include "addition.hpp"
+#include "bigint.hpp"
+#include "slicing.hpp"
 
 #include <algorithm>
 #include <cstddef>

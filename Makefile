@@ -1,7 +1,7 @@
 CXX_FLAGS := -Wall -Wextra -std=c++17 -O3 -fPIC
 
 SRC		:= .
-INCLUDE	:= include 
+INCLUDE	:= ctbignum 
 LIBS 	:= -Bstatic -lstdc++
 
 all: library

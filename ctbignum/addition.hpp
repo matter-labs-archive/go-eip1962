@@ -12,10 +12,10 @@
 #ifndef CT_ADDITION_HPP
 #define CT_ADDITION_HPP
 
-#include <ctbignum/bigint.hpp>
-#include <ctbignum/relational_ops.hpp>
-#include <ctbignum/config.hpp>
-#include <ctbignum/slicing.hpp>
+#include "bigint.hpp"
+#include "relational_ops.hpp"
+#include "config.hpp"
+#include "slicing.hpp"
 
 #include <algorithm>
 #include <cstddef>

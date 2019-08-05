@@ -11,13 +11,13 @@
 #ifndef CT_MONTGOMERY_HPP
 #define CT_MONTGOMERY_HPP
 
-#include <ctbignum/addition.hpp>
-#include <ctbignum/config.hpp>
-#include <ctbignum/gcd.hpp>
-#include <ctbignum/mult.hpp>
-#include <ctbignum/relational_ops.hpp>
-#include <ctbignum/slicing.hpp>
-#include <ctbignum/type_traits.hpp>
+#include "addition.hpp"
+#include "config.hpp"
+#include "gcd.hpp"
+#include "mult.hpp"
+#include "relational_ops.hpp"
+#include "slicing.hpp"
+#include "type_traits.hpp"
 
 #include <cstddef> // std::size_t
 #include <limits>

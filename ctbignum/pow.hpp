@@ -11,8 +11,8 @@
 #ifndef CT_POW_HPP
 #define CT_POW_HPP
 
-#include <ctbignum/bigint.hpp>
-#include <ctbignum/mult.hpp>
+#include "bigint.hpp"
+#include "mult.hpp"
 
 #include <cstddef>
 

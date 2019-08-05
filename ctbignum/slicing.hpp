@@ -11,7 +11,7 @@
 #ifndef CT_SLICING_HPP
 #define CT_SLICING_HPP
 
-#include <ctbignum/bigint.hpp>
+#include "bigint.hpp"
 #include <cstddef>
 
 namespace cbn {

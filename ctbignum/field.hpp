@@ -11,12 +11,12 @@
 #ifndef CT_FIELD_HPP
 #define CT_FIELD_HPP
 
-#include <ctbignum/addition.hpp>
-#include <ctbignum/invariant_div.hpp>
-#include <ctbignum/io.hpp>
-#include <ctbignum/mult.hpp>
-// #include <ctbignum/mod_inv.hpp>
-#include <ctbignum/slicing.hpp>
+#include "addition.hpp"
+#include "invariant_div.hpp"
+#include "io.hpp"
+#include "mult.hpp"
+// #include "mod_inv.hpp"
+#include "slicing.hpp"
 
 #include <cstddef>
 #include <type_traits>

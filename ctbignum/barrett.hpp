@@ -15,12 +15,12 @@
 #include <cstddef> // std::size_t
 #include <cmath>
 
-#include <ctbignum/addition.hpp>
-#include <ctbignum/bigint.hpp>
-#include <ctbignum/division.hpp>
-#include <ctbignum/mult.hpp>
-#include <ctbignum/relational_ops.hpp>
-#include <ctbignum/slicing.hpp>
+#include "addition.hpp"
+#include "bigint.hpp"
+#include "division.hpp"
+#include "mult.hpp"
+#include "relational_ops.hpp"
+#include "slicing.hpp"
 
 namespace cbn {
 

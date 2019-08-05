@@ -11,10 +11,10 @@
 #ifndef CT_INPUTOUTPUT_HPP
 #define CT_INPUTOUTPUT_HPP
 
-#include <ctbignum/bigint.hpp>
-#include <ctbignum/config.hpp>
-#include <ctbignum/invariant_div.hpp>
-#include <ctbignum/utility.hpp>
+#include "bigint.hpp"
+#include "config.hpp"
+#include "invariant_div.hpp"
+#include "utility.hpp"
 
 #include <ostream>
 #include <limits>
