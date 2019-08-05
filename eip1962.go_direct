@@ -1,0 +1,62 @@
+package eip1962
+
+/*
+// #cgo CFLAGS: -std=c++17
+#cgo LDFLAGS: -lc++ -lstdc++ -O3
+#cgo CXXFLAGS: -std=c++17
+// #cgo CXXFLAGS: -I./include/
+#include "./src/api.cpp"
+#include "./src/common.cpp"
+#include "./src/repr.cpp"
+#include "./src/wrapper.h"
+#include "./src/wrapper.cpp"
+// extern int run(const char *i, uint32_t i_len, char *o, uint32_t *o_len, char *err, uint32_t *char_len);
+// extern int meter_gas(const char *i, uint32_t i_len, uint64_t *gas);
+*/
+import "C"
+
+import (
+	"errors"
+	"math/big"
+	"unsafe"
+)
+
+const maxOutputLen = 256 * 3 * 2
+
+var (
+	ErrInvalidMsgLen = errors.New("invalid message length, need 32 bytes")
+)
+
+// Call calls the C++ implementation of the EIP
+func Call(data []byte) ([]byte, error) {
+	if len(msg) == 0 {
+		return nil, ErrInvalidMsgLen
+	}
+	ilen := len(data)
+	output_bytes = make([]byte, maxOutputLen)
+	olen := uint32(0)
+	errStringBytes := make([]byte, maxOutputLen)
+	errStringLen := uint32(0)
+
+	var (
+		inputdata  = (*C.uchar)(unsafe.Pointer(&data[0]))
+		inputlen   = (C.uint32_t)(ilen)
+		outputdata = (*C.uchar)(unsafe.Pointer(&output_bytes[0]))
+		outputlen  = (*C.uint32_t)(unsafe.Pointer(&olen))
+		errdata    = (*C.uchar)(unsafe.Pointer(&errStringBytes[0]))
+		errlen     = (*C.uint32_t)(unsafe.Pointer(&errStringLen))
+	)
+
+	result := C.run(inputdata, inputlen, outputdata, outputlen, errdata, errlen)
+	if result == 0 {
+		// parse error string
+		return nil, ErrSignFailed
+	}
+
+	return output_bytes[:olen], nil
+}
+
+// EstimateGas calls C++ implementation for a gas estimte
+func EstimateGas(data []byte) (big.Int, error) {
+	return big.NewInt(1000000), nil
+}
