@@ -9,7 +9,6 @@ import "C"
 
 import (
 	"errors"
-	"math/big"
 	"unsafe"
 )
 
