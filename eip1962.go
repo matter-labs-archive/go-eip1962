@@ -50,6 +50,6 @@ func Call(data []byte) ([]byte, error) {
 }
 
 // EstimateGas calls C++ implementation for a gas estimte
-func EstimateGas(data []byte) *big.Int {
-	return big.NewInt(1000000)
+func EstimateGas(data []byte) uint64 {
+	return 1000000
 }
