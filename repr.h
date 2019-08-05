@@ -2,7 +2,7 @@
 #define H_REPR
 
 #include "common.h"
-#include "ctbignum/ctbignum.hpp"
+#include "include/ctbignum/ctbignum.hpp"
 
 const static usize LIMB_BITS = sizeof(u64) * 8;
 
